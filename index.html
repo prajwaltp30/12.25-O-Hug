@@ -175,7 +175,7 @@
 
       textSegments.forEach(segment => {
         const speech = new SpeechSynthesisUtterance(segment);
-        speech.volume = 2; // Set volume to 200% for text-to-speech
+        speech.volume = 0; // Set volume to 200% for text-to-speech
         setTimeout(() => window.speechSynthesis.speak(speech), currentTime * 1000);
         currentTime += segment.length / 7; // Adjust based on segment length
       });
