@@ -166,9 +166,9 @@
       heart.classList.add('heart');
       document.querySelector('.hug-container').appendChild(heart);
 
-      const audio = new Audio('abcdefghi-love-you-still-tyler-shaw-english-song.mp3'); // Replace with the actual sound file
-      audio.volume = 0.2;
-      audio.play();
+      // const audio = new Audio('hi.mp3'); // Replace with the actual sound file
+      // audio.volume = 0.2;
+      // audio.play();
 
       const textSegments = greetingText.innerText.split('. ');
       let currentTime = 0;
@@ -189,8 +189,9 @@
         greetingText.innerHTML = "On this Hug Day, sending you all my love wrapped up in virtual hugs! Imagine feeling the warmth and comfort as if we were together! Hugs speak a language of love that words sometimes miss! Whether near or far, know that you're in my heart! Happy Hug Day, my love! Here's to the sweet moments we share, even from a distance.";
         // Reset background color to default
         document.body.style.backgroundColor = "#f5f5f5";
-        audio.pause();
-        audio.currentTime = 0;
+        // audio.pause();
+        
+        // audio.currentTime = 0;
       }, 32000); // Stop background color change after 30 seconds
     }
 
